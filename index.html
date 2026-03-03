@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuetonghui Xu | Personal Homepage</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a33;
+      --soft: #1b2547;
+      --text: #e9eefc;
+      --muted: #a9b5d9;
+      --accent: #7aa2ff;
+      --accent-2: #7ee0c6;
+      --line: #2b396b;
+      --chip: #1a2341;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #23356f33, transparent 60%),
+        radial-gradient(800px 500px at 100% 0%, #2e7bc333, transparent 60%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(var(--max), 92vw);
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #172246 0%, #101a36 100%);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 10px 30px #00000033;
+    }
+
+    .name {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: 0.3px;
+    }
+
+    .subtitle {
+      margin: 10px 0 18px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .contact li {
+      background: #0f1833;
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--panel), #10172f);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .section-title {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      color: var(--accent-2);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .edu-item, .exp-item, .pub-item, .award-item {
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #33457f;
+    }
+    .edu-item:last-child, .exp-item:last-child, .pub-item:last-child, .award-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    .item-title {
+      font-weight: 650;
+      font-size: 1rem;
+    }
+
+    .item-time {
+      color: var(--muted);
+      font-size: 0.93rem;
+      white-space: nowrap;
+    }
+
+    .item-sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul.clean {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      color: #d6defa;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+    }
+
+    .full {
+      margin-top: 18px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1 class="name">Yuetonghui Xu</h1>
+      <p class="subtitle">
+        Researcher in Music Source Separation, Audio Intelligence, and Machine Learning
+      </p>
+      <ul class="contact">
+        <li>📞 +86 13219054963</li>
+        <li>✉️ <a href="mailto:melkior@qq.com">melkior@qq.com</a></li>
+        <li>🌍 China</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-item">
+          <div class="item-head">
+            <div class="item-title">Master’s Program (211 University)</div>
+            <div class="item-time">Sep 2022 – Jun 2026 (Expected)</div>
+          </div>
+          <div class="item-sub">
+            Focus: Audio signal processing, music source separation, deep learning.
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="item-head">
+            <div class="item-title">Bachelor’s Degree (985 University)</div>
+            <div class="item-time">Sep 2019 – Jun 2022</div>
+          </div>
+          <div class="item-sub">GPA: 3.95 / 4.00</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="item-head">
+            <div class="item-title">Previous Undergraduate Study (985 University)</div>
+            <div class="item-time">Sep 2015 – Jun 2019</div>
+          </div>
+          <div class="item-sub">GPA: 3.76 / 4.00</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Skills</h2>
+        <div class="item-sub"><strong>Programming & Tools</strong></div>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">MATLAB</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Git</span>
+          <span class="chip">Docker</span>
+          <span class="chip">React + TypeScript</span>
+        </div>
+
+        <div class="item-sub" style="margin-top: 12px;"><strong>Audio & Creative Tools</strong></div>
+        <div class="chips">
+          <span class="chip">DAW</span>
+          <span class="chip">Logic Pro</span>
+          <span class="chip">SuperCollider</span>
+          <span class="chip">SoVITS</span>
+        </div>
+
+        <div class="item-sub" style="margin-top: 12px;"><strong>Languages</strong></div>
+        <ul class="clean">
+          <li>CET-4: 597</li>
+          <li>CET-6: 562</li>
+          <li>TOEFL: 90</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card full">
+      <h2 class="section-title">Research & Projects</h2>
+
+      <div class="exp-item">
+        <div class="item-head">
+          <div class="item-title">Large-Scale Music/Audio Engineering Project</div>
+          <div class="item-time">Jun 2025 – Present</div>
+        </div>
+        <ul class="clean">
+          <li>Built and curated large-scale music/audio data and workflow pipelines.</li>
+          <li>Maintained long-form production and experimentation cycles (4500h+ / 750h+ records in related workflows).</li>
+          <li>Contributed to 30+ modules/components, including work with YuEChat and MuMu-LLaMA related tasks.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="item-head">
+          <div class="item-title">HRTF and Spatial Audio Research</div>
+          <div class="item-time">Sep 2022 – Sep 2024</div>
+        </div>
+        <ul class="clean">
+          <li>Implemented and evaluated HRTF-related algorithms in MATLAB.</li>
+          <li>Designed experiments for robust audio perception and reconstruction quality.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="item-head">
+          <div class="item-title">Source Separation & Voice Synthesis Exploration</div>
+          <div class="item-time">Jun 2024 – Dec 2024</div>
+        </div>
+        <ul class="clean">
+          <li>Researched source separation strategies with timbral/spatial constraints.</li>
+          <li>Applied SoVITS-based methods in practical audio generation workflows.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="item-head">
+          <div class="item-title">Frontend Collaboration Platform</div>
+          <div class="item-time">Jun 2021 – Nov 2021</div>
+        </div>
+        <ul class="clean">
+          <li>Developed PPT-like collaborative features using React + TypeScript.</li>
+          <li>Managed version control and teamwork workflows with Git (7000+ activity records).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card full">
+      <h2 class="section-title">Publications</h2>
+
+      <div class="pub-item">
+        <div class="item-title">
+          Position Also Matters! Separating Same Instruments in String Quartet using Timbral and Positional Cues
+        </div>
+        <div class="item-sub">
+          Yuetonghui Xu, Yiwen Wang, Xihong Wu, Xiaobing Li, Feng Yu — Accepted by INTERSPEECH 2025 (CCF-C).
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="item-title">
+          Research on Generalization of U-Net Intermediate Block Design for Music Source Separation
+        </div>
+        <div class="item-sub">
+          Xu Y, Luo X, Tong L — National Conference on Sound and Music Technology, Springer, 2023.
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="item-title">MEANS: Multi-Expert Aggregation Network for Stock Prediction</div>
+        <div class="item-sub">Zhixin Yuan, Yuetonghui Xu, Xihong Wu — Submitted to ICASSP 2026.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="item-title">ACMID: Automatic Curation of Musical Instrument Dataset for Source Separation</div>
+        <div class="item-sub">Ji Yu et al., including Yuetonghui Xu — Submitted to ICASSP 2026.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="item-title">
+          TISDiSS: A Training-Time and Inference-Time Scalable Framework for Discriminative Source Separation
+        </div>
+        <div class="item-sub">
+          Yongsheng Feng et al., including Yuetonghui Xu — Submitted to ICASSP 2026.
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="item-title">
+          High Precision and Light-Weight Network for Low Resolution SAR Image Detection
+        </div>
+        <div class="item-sub">
+          Xu, Y. et al. — IGARSS 2022 (IEEE, CCF-C).
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="item-title">
+          An Efficient HRWS SAR Reconstruction Method Based on Frequency Domain Back Projection
+        </div>
+        <div class="item-sub">
+          Zhou, L., Zhang, X., Xu, Y. — IGARSS 2022 (IEEE, CCF-C).
+        </div>
+      </div>
+    </section>
+
+    <section class="card full">
+      <h2 class="section-title">Awards & Activities</h2>
+
+      <div class="award-item">
+        <div class="item-title">IEEE Xtreme 14.0 / ACM Related Competition</div>
+        <div class="item-sub">Ranked within top 10% (2019–2022 period).</div>
+      </div>
+
+      <div class="award-item">
+        <div class="item-title">Academic & Research Activities</div>
+        <div class="item-sub">
+          Active in audio intelligence, source separation, and interdisciplinary ML applications.
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">
+      © 2026 Yuetonghui Xu · Personal Academic Homepage
+    </p>
+  </main>
+</body>
+</html>
